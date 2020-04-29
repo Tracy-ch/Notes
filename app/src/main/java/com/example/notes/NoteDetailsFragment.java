@@ -10,13 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class noteDetailsFragment extends Fragment {
+public class NoteDetailsFragment extends Fragment {
 
     private TextView bigTitle;
     private TextView detailedDescription;
 
-    public static noteDetailsFragment newInstance(String title, String description){
-        noteDetailsFragment noteDetailsFragment = new noteDetailsFragment();
+    public static NoteDetailsFragment newInstance(String title, String description){
+        NoteDetailsFragment noteDetailsFragment = new NoteDetailsFragment();
         Bundle details = new Bundle();
         details.putString("Title", title);
         details.putString("Description",description);
